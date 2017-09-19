@@ -7,7 +7,6 @@ class App extends Component {
       <div className="container">
         <div className="columns">
           <div className="col-md-9 centered">
-            <h3>Bloc Time</h3>
             <TimerContainer />
           </div>
         </div>
