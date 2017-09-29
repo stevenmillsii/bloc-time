@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import TimerContainer from './containers/TimerContainer'
+import './css/bootstrap.min.css';
+import './index.css';
+import { Button, Grid, Row, Col, Clearfix } from 'react-bootstrap';
 
 class App extends Component {
   render() {
     return (
-      <div className="container">
-        <div className="columns">
-          <div className="col-md-9 centered">
+      <Grid>
+        <Row className="show-grid">
+          <Col md={6} md-offest={3}>
             <TimerContainer />
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Grid>
     );
   }
 }

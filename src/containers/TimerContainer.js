@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import { Button, Grid, Row, Col, Clearfix } from 'react-bootstrap';
+import '../index.css';
+
 
 class TimerContainer extends Component {
   constructor(props) {
@@ -41,11 +44,11 @@ class TimerContainer extends Component {
     let timer = 25*60 - Math.round(this.state.elapsed / 1000);
     return (
       <div>
-        Seconds: {timer}
-      <button onClick={this.handleClick}>
-        {this.state.timerStart ? 'Start' : 'Reset'}
-      </button>
-    </div>
+        <h2>{timer}</h2>
+        <Button bsSize="large" onClick={this.handleClick}>
+          {this.state.timerStart ? 'Start' : 'Reset'}
+        </Button>
+      </div>
     );
   }
 }
