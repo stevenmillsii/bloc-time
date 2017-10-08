@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import TimerContainer from './containers/TimerContainer'
-import './css/bootstrap.min.css';
 import './index.css';
 import { Button, Grid, Row, Col, Clearfix } from 'react-bootstrap';
 
